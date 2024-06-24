@@ -1,26 +1,24 @@
 <template>
-  <div id = "app">
+  <div id="app">
 
   </div>
 </template>
 
 <script>
-export default {
-  name: "app",
-  components: {
+import HomePage from "@/components/HomePage.vue";
+import Navbar from "@/components/HomePage.vue";
 
+export default {
+  name: "app", 
+  components: {
+    HomePage,
+    Navbar
   },
   data() {
-    return {
-
-    };
+    return {};
   },
-  methods: {
-
-  },
-}
+  methods: {},
+};
 </script>
 
-<style>
-
-</style>
+<style scoped></style>
