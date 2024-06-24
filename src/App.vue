@@ -6,22 +6,21 @@
 
 <script>
 export default {
-  namd: "app",
+  name: "app",
   components: {
 
-  }, 
+  },
   data() {
     return {
 
     };
   },
   methods: {
-    
-  }
-}
 
+  },
+}
 </script>
 
-<style scoped>
+<style>
 
 </style>
