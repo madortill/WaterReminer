@@ -37,7 +37,7 @@ export default {
 <style scoped>
 #navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between ;
   align-items: center;
   height: 60px;
   background-color: #002753;
