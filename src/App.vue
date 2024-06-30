@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <navbar></navbar>
+    <home-page></home-page>
   </div>
-
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue';
+import HomePage from './components/HomePage.vue';
 
 export default {
   name: "app",
   components: {
-    Navbar
+    Navbar,
+    HomePage
   },
   data() {
     return {};
@@ -23,7 +25,7 @@ export default {
 <style>
 @font-face {
   font-family: "Heebo";
-  src: url("@/assets/fonts/heebo.regular.ttf");
+  /* src: url("../assets/fonts/heebo.regular.ttf"); */
 }
 
 @font-face {
@@ -31,10 +33,14 @@ export default {
   src: url("@/assets/fonts/heebo.black.ttf");
 }
 
+* {
+  font-family: 'Heebo', sans-serif; 
+}
+
 body,
 html {
   margin: 0;
   direction: rtl;
-  background-color: rgb(199, 239, 252);
+  background-color: rgb(216, 239, 247);
 }
 </style>

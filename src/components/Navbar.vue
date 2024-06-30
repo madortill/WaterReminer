@@ -1,6 +1,6 @@
 <template>
-  <nav id="navbar">
-    <div class="brand-title">Brand</div>
+  <div id="navbar">
+    <!-- <div class="brand-title">Brand</div> -->
     <a class="toggle-button" @click="toggleMenu">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -8,14 +8,15 @@
     </a>
     <div :class="['navbar-links', { active: isActive }]">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">בית</a></li>
+        <li><a href="#">מידע</a></li>
+        <li><a href="#">שתייה</a></li>
+        <li><a href="#">עלינו</a></li>
       </ul>
     </div>
-  </nav>
+  </div>
 </template>
+
 
 <script>
 export default {
@@ -39,9 +40,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: #333;
+  background-color: #002753;
   color: white;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .brand-title {
@@ -49,7 +50,7 @@ export default {
 }
 
 .navbar-links {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .navbar-links ul {
@@ -60,56 +61,14 @@ export default {
 }
 
 .navbar-links li {
-  padding: 0 20px;
+  /* Adjust padding here if needed */
 }
 
 .navbar-links a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  padding: 10px 20px; /* Add padding to the anchor tags */
 }
 
-.toggle-button {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  .toggle-button {
-    display: flex;
-  }
-  
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  
-  .navbar-links ul {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .navbar-links li {
-    text-align: center;
-    padding: 15px 0;
-    width: 100%;
-  }
-  
-  .navbar-links.active {
-    display: flex;
-  }
-}
 </style>
