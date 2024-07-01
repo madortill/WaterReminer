@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     toggleMenu() {
-      this.isActive = !this.isActive;
+      this.isActive = !this.isActive ;
     },
   },
 };
