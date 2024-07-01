@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style>
-@font-face {
+/* @font-face {
   font-family: 'Heebo Black';
   src: url('/src/assets/fonts/heebo.black.ttf') format('truetype');
 }
@@ -35,7 +35,7 @@ export default {
 
 * {
   font-family: 'Heebo', sans-serif; 
-}
+} */
 
 body,
 html {
