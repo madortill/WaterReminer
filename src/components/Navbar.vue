@@ -49,9 +49,9 @@ export default {
   font-size: 1.5rem;
 }
 
-.navbar-links {
+/* .navbar-links { */
   /* height: 100%; */
-}
+/* } */
 
 .navbar-links ul {
   display: flex;
@@ -60,9 +60,9 @@ export default {
   list-style: none;
 }
 
-.navbar-links li {
+/* .navbar-links li { */
   /* Adjust padding here if needed */
-}
+/* } */
 
 .navbar-links a {
   color: white;
