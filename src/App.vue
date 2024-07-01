@@ -24,8 +24,8 @@ export default {
 
 <style>
 @font-face {
-  font-family: "Heebo";
-  /* src: url("../assets/fonts/heebo.regular.ttf"); */
+  font-family: 'Heebo Black';
+  src: url('/src/assets/fonts/heebo.black.ttf') format('truetype');
 }
 
 @font-face {
