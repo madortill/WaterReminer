@@ -1,7 +1,6 @@
 <template>
   <div id="home-page">
     <h1 class="title-text">water reminder</h1>
-    <p class="title-text" >בבקשה תעבוד</p>
   </div>
 </template>
 
@@ -15,7 +14,22 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+@font-face {
+  font-family: "Heebo";
+  src: url("@/assets/fonts/Heebo-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Heebo-Bold";
+  src: url("@/assets/fonts/Heebo-Bold.ttf");
+}
+
+* {
+  overflow: hidden;
+  font-family: "Heebo";
+}
+
 #home-page {
   display: flex;
   justify-content: center;
