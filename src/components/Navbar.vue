@@ -1,6 +1,5 @@
 <template>
   <div id="navbar">
-    <!-- <div class="brand-title">Brand</div> -->
     <a class="toggle-button" @click="toggleMenu">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -8,27 +7,40 @@
     </a>
     <div :class="['navbar-links', { active: isActive }]">
       <ul>
-        <li><a href="#">בית</a></li>
-        <li><a href="#">מידע</a></li>
-        <li><a href="#">שתייה</a></li>
-        <li><a href="#">עלינו</a></li>
+        <li><a @click="changePageAddres('/homePage')" id="home">בית</a></li>
+        <li><a @click="changePageAddres('/infoPage')" id="info">מידע</a></li>
+        <li><a @click="changePageAddres('/drinks')" id="drink">שתייה</a></li>
+        <li><a @click="changePageAddres('/about')" id="about">עלינו</a></li>
       </ul>
     </div>
   </div>
 </template>
 
-
 <script>
 export default {
-  name: "navbar",
+  name: "Navbar",
   data() {
     return {
       isActive: false,
+      page: 1,
     };
   },
   methods: {
     toggleMenu() {
-      this.isActive = !this.isActive ;
+      this.isActive = !this.isActive;
+    },
+    changePageAddres(path, event) {
+      this.$router.push(path);
+      if (path === "/drinks") {
+        this.page = 3;
+      } else if( path === "/homePage") {
+        this.page = 1;
+      } else if( path === "/about") {
+        this.page = 4;
+      } else if( path === "/infoPage") {
+        this.page = 2;
+      }
+      this.$emit("curr-page", this.page);
     },
   },
 };
@@ -37,7 +49,7 @@ export default {
 <style scoped>
 #navbar {
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
   align-items: center;
   height: 60px;
   background-color: #002753;
@@ -49,10 +61,6 @@ export default {
   font-size: 1.5rem;
 }
 
-/* .navbar-links { */
-  /* height: 100%; */
-/* } */
-
 .navbar-links ul {
   display: flex;
   margin: 0;
@@ -60,15 +68,11 @@ export default {
   list-style: none;
 }
 
-/* .navbar-links li { */
-  /* Adjust padding here if needed */
-/* } */
-
 .navbar-links a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
-  padding: 10px 20px; /* Add padding to the anchor tags */
+  padding: 10px 20px;
+  cursor: pointer;
 }
-
 </style>
