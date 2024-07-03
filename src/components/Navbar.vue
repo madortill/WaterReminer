@@ -51,7 +51,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 70px;
   background-color: #002753;
   color: white;
   padding: 0 50px;
@@ -64,7 +64,7 @@ export default {
 .navbar-links ul {
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0%;
   list-style: none;
 }
 

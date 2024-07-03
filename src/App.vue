@@ -58,6 +58,6 @@ export default {
 body,
 html {
   margin: 0;
-  background-color: rgb(216, 239, 247);
+  background-color: rgb(233, 232, 232);
 }
 </style>
