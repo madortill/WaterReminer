@@ -63,7 +63,7 @@ export default {
 
 .navbar-links ul {
   display: flex;
-  margin: 0;
+  margin: 0%;
   padding: 0%;
   list-style: none;
 }
@@ -74,5 +74,5 @@ export default {
   font-size: 1.1rem;
   padding: 10px 20px;
   cursor: pointer;
-}
+}  
 </style>

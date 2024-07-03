@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <navbar @curr-page = "nextSub"></navbar>
+    <open-screen v-if = "currPage === 0"></open-screen>
     <home-page v-if = "currPage === 1"></home-page>
     <info-page v-if = "currPage === 2"> </info-page>
     <drinks v-if = "currPage === 3"></drinks>
@@ -14,6 +15,7 @@ import HomePage from "./components/HomePage.vue";
 import AboutUs from "./components/AboutUs.vue";
 import InfoPage from "./components/InfoPage.vue";
 import Drinks from "./components/Drinks.vue";
+import OpenScreen from "./components/OpenScreen.vue";
 
 export default {
   name: "app",
@@ -23,6 +25,7 @@ export default {
     AboutUs,
     Drinks,
     InfoPage,
+    OpenScreen,
   },
   data() {
     return {
